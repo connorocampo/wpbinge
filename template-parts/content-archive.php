@@ -1,22 +1,25 @@
-<div class="container">
-
-    <div class="post mb-5">
-        <div class="media">
-            <img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="<?php the_post_thumbnail_url('thumbnail'); ?>" alt="">
-            <div class="media-body">
-                <h3 class="title mb-1"><a href="<?php the_permalink(); ?>" target="_blank"><?php the_title(); ?></a></h3>
-                <div class="meta mb-1">
-                    <span class="date"><?php the_date(); ?></span><span class="comment"><a href="<?php the_permalink(); ?>#comments"><?php comments_number(); ?></a></span>
-                </div>
-                <div class="intro">
-                    <?php
+        <div class="post">
+            <img
+                src="<?php the_post_thumbnail_url('thumbnail'); ?>"
+                alt=""
+                class="featured-image"
+            />
+            <h2 class="blog-post-title">
+                <a href="<?php the_permalink(); ?>" target="_blank"><?php the_title(); ?></a>
+            </h2>
+            <span class="date"><?php the_date(); ?></span>
+            <a href="#" class="tag tag-yellow"
+                ><i class="fas fa-tag"></i> Web Hosting</a
+            >
+            <a href="#" class="tag tag-aqua"
+                ><i class="fas fa-tag"></i> Opinion</a
+            >
+            <p class="excerpt">
+                <?php
                     the_excerpt();
-                    ?>
-                </div>
-
-                <a class="more-link" href="<?php the_permalink(); ?>" >Read more &rarr;</a>
-            </div><!--//media-body-->
-        </div><!--//media-->
-    </div>
- 
-</div>
+                ?>
+            </p>
+            <a href="<?php the_permalink(); ?>" class="read-more-link">Read More</a>
+        </div>
+        
+    
