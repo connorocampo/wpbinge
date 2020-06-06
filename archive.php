@@ -16,11 +16,7 @@
                 }
             }
         ?>
-
-          <!-- <div class="pagination">
-              <p>1 2 3 ... 4</p>
-              <p>Next Page →</p>
-          </div> -->
+        
         </section>
         <!-- /blog list -->
 

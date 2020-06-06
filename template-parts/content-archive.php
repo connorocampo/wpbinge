@@ -19,7 +19,7 @@
                     the_excerpt();
                 ?>
             </p>
-            <a href="<?php the_permalink(); ?>" class="read-more-link">Read More</a>
+            <a href="<?php the_permalink(); ?>" class="read-more-link" target="_blank">Read More</a>
         </div>
         <!-- /post -->
         <hr />

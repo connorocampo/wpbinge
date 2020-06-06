@@ -6,7 +6,7 @@
         <section class="blog-list">
 
         <!-- gets post or page content -->
-		<?php
+		    <?php
             if (have_posts()) {
                 while (have_posts()) {
                     the_post();
@@ -17,12 +17,15 @@
             }
         ?>
 
-            <div class="pagination">
+            <!-- <div class="pagination">
                 <p>1 2 3 ... 4</p>
                 <p>Next Page →</p>
-            </div>
+            </div> -->
+            
         </section>
         <!-- /blog list -->
+
+        
 
         <section class="sidebar">
         <h2 class="sidebar-header">Search The Blog</h2>
@@ -96,7 +99,9 @@
       </section>
       <!-- /sidebar -->
     </div>
-	<!-- /main content -->
+  <!-- /main content -->
+  
+  
     
 <?php
 get_footer();
