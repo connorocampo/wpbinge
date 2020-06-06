@@ -1,6 +1,6 @@
 <?php
 
-function followandrew_theme_support()
+function wpbinge_theme_support()
 {
     // adds dynamic title tag support
     add_theme_support('title-tag');
@@ -8,9 +8,9 @@ function followandrew_theme_support()
     add_theme_support('post-thumbnails');
 }
 
-add_action('after_setup_theme', 'followandrew_theme_support');
+add_action('after_setup_theme', 'wpbinge_theme_support');
 
-function followandrew_menus()
+function wpbinge_menus()
 {
     $locations = array(
         'primary' => "Desktop Primary Left Sidebar",
@@ -20,32 +20,27 @@ function followandrew_menus()
     register_nav_menus($locations);
 }
 
-add_action('init', 'followandrew_menus');
+add_action('init', 'wpbinge_menus');
 
-
-
-function followandrew_register_styles()
+function wpbinge_register_styles()
 {
     $version = wp_get_theme()->get('Version');
-    wp_enqueue_style('followandrew-style', get_template_directory_uri()."/style.css", array('followandrew-bootstrap'), $version, 'all');
-    wp_enqueue_style('followandrew-bootstrap', "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css", array(), '4.4.1', 'all');
-    wp_enqueue_style('followandrew-fontawesome', "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css", array(), '5.13.0', 'all');
+    wp_enqueue_style('wpbinge-style', get_template_directory_uri()."/style.css", $version, 'all');
+    wp_enqueue_style('wpbinge-fontawesome', "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css", array(), '5.13.0', 'all');
 }
 
-add_action('wp_enqueue_scripts', 'followandrew_register_styles');
+add_action('wp_enqueue_scripts', 'wpbinge_register_styles');
 
 
-function followandrew_register_scripts()
+function wpbinge_register_scripts()
 {
-    wp_enqueue_script('followandrew-jquery', 'https://code.jquery.com/jquery-3.4.1.slim.min.js', array(), '3.4.1', true);
-    wp_enqueue_script('followandrew-popper', 'https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js', array(), '1.16.0', true);
-    wp_enqueue_script('followandrew-bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js', array(), '4.4.1', true);
-    wp_enqueue_script('followandrew-main', get_template_directory_uri()."/assets/js/main.js", array(), '1.0', true);
+    wp_enqueue_script('wpbinge-font-awesome', 'https://kit.fontawesome.com/2641fe0f3e.js', array(), '5.0', true);
+    wp_enqueue_script('wpbinge-main', get_template_directory_uri()."/assets/js/main.js", array(), '1.0', true);
 }
 
-add_action('wp_enqueue_scripts', 'followandrew_register_scripts');
+add_action('wp_enqueue_scripts', 'wpbinge_register_scripts');
 
-function followandrew_widget_areas()
+function wpbinge_widget_areas()
 {
     register_sidebar(
         array(
@@ -73,7 +68,7 @@ function followandrew_widget_areas()
     );
 }
 
-add_action('widgets_init', 'followandrew_widget_areas');
+add_action('widgets_init', 'wpbinge_widget_areas');
 
 ?>
 
