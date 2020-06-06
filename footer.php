@@ -35,7 +35,8 @@
  <div class="footer-credit">
         <p>
           Copyright © 2020 |
-          <a href="#" class="footer-credit-link">WPBinge.com</a> | Made with
+          <a class="footer-credit-link" href="/"><?php echo get_bloginfo('name'); ?></a>
+          | Made with
           <i class="fas fa-heart"></i> by Connor Ocampo | View code in
           <a
             href="https://github.com/connorocampo/wp-theme-template"

@@ -24,13 +24,13 @@ window.onclick = function (toggle) {
   }
 };
 
-// ADD ACTIVE CLASS TO NAV LINKS WHEN SELECTED
+// add active class to nav link
 
 let navLink = document.querySelectorAll(".selectedLink");
 
 navLink.forEach((selectedLink) => {
   selectedLink.addEventListener("click", function () {
-    navLink.forEach((btn) => btn.classList.remove("selected"));
-    this.classList.add("selected");
+    navLink.forEach((btn) => btn.classList.remove("active"));
+    this.classList.add("active");
   });
 });

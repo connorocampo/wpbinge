@@ -175,13 +175,22 @@ nav a {
 }
 
 .nav-links {
+  /* test display rule */
+  display: flex;
   float: right;
   margin-top: 10px;
   text-transform: uppercase;
 }
 
-.selected,
+.nav-links li {
+  list-style: none;
+}
+
 .nav-links a:hover {
+  color: var(--yellow);
+}
+
+.active a {
   color: var(--yellow);
 }
 
@@ -529,6 +538,11 @@ td {
   .fa-ellipsis-v {
     font-size: 22px;
     padding: 1.195em;
+  }
+
+  /* test */
+  .responsive {
+    flex-direction: column;
   }
 
   #nav.responsive a {

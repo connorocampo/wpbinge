@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>WP Binge | Learn WordPress</title>
     <!-- Meta -->
+    <title>WP Binge | Learn WordPress</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,15 +24,22 @@
             $logo = wp_get_attachment_image_src($custom_logo_id);
           }
           ?>
-        <a href="/"><img src="<?php echo $logo[0] ?>" /></a>  
-        <div class="nav-links" id="nav">
-          <a href="/page.html" class="selectedLink">Page</a>
-          <a href="/archive.html" class="selectedLink">Archive</a>
-          <a href="/contact.html" class="selectedLink">Contact</a>
-          <button class="nav-btn">
-            <i class="fas fa-ellipsis-v toggle-btn" onclick="toggleNav()"></i>
-          </button>
-        </div>
+        <a href="/"><img src="<?php echo $logo[0] ?>" /></a>
+
+        <?php
+            wp_nav_menu(
+              array(
+                'menu' => 'primary',
+                'container' => '',
+                'theme_location' => 'primary',
+                'items_wrap' => '<ul id="nav" class="nav-links">%3$s</ul>'
+              )
+            );
+        ?>
+
+        <button class="nav-btn">
+          <i class="fas fa-ellipsis-v toggle-btn" onclick="toggleNav()"></i>
+        </button>
       </nav>
     </header>
     <!-- /header -->

@@ -10,10 +10,12 @@ function wpbinge_theme_support()
 
 add_action('after_setup_theme', 'wpbinge_theme_support');
 
+// Add dynamic menus 
+
 function wpbinge_menus()
 {
     $locations = array(
-        'primary' => "Desktop Primary Left Sidebar",
+        'primary' => "Desktop Primary Menu",
         'footer' => "Footer Menu Items"
     );
 
