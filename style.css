@@ -219,6 +219,8 @@ nav a {
 .blog-list {
   background: #fff;
   display: flex;
+  height: fit-content;
+
   flex-direction: column;
   padding: 80px 0 0 0;
   width: 830px;
@@ -246,6 +248,26 @@ hr:last-child {
   position: relative;
   top: -50px;
   width: var(--width-blog-content);
+}
+
+/* .nav-links {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px auto;
+  position: relative;
+  top: -50px;
+  width: var(--width-blog-content);
+} */
+
+span.page-numbers.current {
+  color: var(--yellow);
+  font-family: var(--font-family-open-sans-bold);
+  font-size: 18px;
+  padding: 20px 1em;
+}
+
+.pagination a {
+  color: var(--black);
 }
 
 .blog-post-title a {
