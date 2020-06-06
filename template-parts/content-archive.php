@@ -1,3 +1,5 @@
+        <hr />
+        
         <div class="post">
             <img
                 src="<?php the_post_thumbnail_url('thumbnail'); ?>"
@@ -22,6 +24,5 @@
             <a href="<?php the_permalink(); ?>" class="read-more-link" target="_blank">Read More</a>
         </div>
         <!-- /post -->
-        <hr />
         
     
