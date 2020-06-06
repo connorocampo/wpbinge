@@ -6,7 +6,7 @@
         <section class="blog-list">
 
         <!-- gets post or page content -->
-		<?php
+		    <?php
             if (have_posts()) {
                 while (have_posts()) {
                     the_post();
@@ -17,10 +17,10 @@
             }
         ?>
 
-            <div class="pagination">
-                <p>1 2 3 ... 4</p>
-                <p>Next Page →</p>
-            </div>
+          <!-- <div class="pagination">
+              <p>1 2 3 ... 4</p>
+              <p>Next Page →</p>
+          </div> -->
         </section>
         <!-- /blog list -->
 

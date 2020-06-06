@@ -21,5 +21,7 @@
             </p>
             <a href="<?php the_permalink(); ?>" class="read-more-link">Read More</a>
         </div>
+        <!-- /post -->
+        <hr />
         
     
