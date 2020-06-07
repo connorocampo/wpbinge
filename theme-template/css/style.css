@@ -567,7 +567,8 @@ td {
   }
 
   .pagination {
-    top: 165px;
+    /* top: 165px; */
+    top: 100px;
     width: 80vw;
   }
 
@@ -610,10 +611,6 @@ td {
   .blog-list,
   .page-container {
     padding: 25px 0;
-  }
-
-  .pagination {
-    top: 100px;
   }
 
   .date {
