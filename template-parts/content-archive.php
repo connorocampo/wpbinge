@@ -11,12 +11,9 @@
                 <?php the_title(); ?></a>
             </h2>
             <span class="date"><?php the_date(); ?></span>
-            <a href="#" class="tag tag-yellow"
-                ><i class="fas fa-tag"></i> Web Hosting</a
-            >
-            <a href="#" class="tag tag-aqua"
-                ><i class="fas fa-tag"></i> Opinion</a
-            >
+            
+            <?php the_tags('<span class="tag"><i class="fas fa-tag"></i>', '</span><span class="tag"><i class="fas fa-tag"></i>', '</span>'); ?>
+
             <?php
                 the_excerpt();
             ?>
