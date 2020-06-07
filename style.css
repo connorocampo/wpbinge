@@ -104,10 +104,12 @@ body {
   margin: 0;
   padding: 0;
 }
+
 a {
   font-family: var(--font-family-open-sans);
   text-decoration: none;
 }
+
 h1,
 h2,
 h3,
@@ -204,7 +206,7 @@ nav a {
   display: none;
 }
 
-/* MAIN CONTENT  */
+/* PAGE / MAIN CONTENT  */
 
 .main-content {
   display: flex;
@@ -215,7 +217,13 @@ nav a {
   width: 1200px;
 }
 
-/* BLOG LIST */
+blockquote.wp-block-quote {
+  border-left: 5px solid #ffc046;
+  padding-left: 2em;
+  margin-left: 0;
+}
+
+/* BLOG LIST PAGE */
 
 .blog-list {
   background: #fff;
@@ -510,6 +518,15 @@ footer {
   width: 600px;
 }
 
+.page h1 {
+  margin-top: 0;
+}
+
+.page a {
+  color: var(--black);
+  border-bottom: 2px solid #ffc046;
+}
+
 .page-container {
   background: #fff;
   display: flex;
@@ -518,13 +535,18 @@ footer {
   height: min-content;
   flex: 0 0 auto;
   padding: 80px 0;
+  padding: 60px 0;
   width: 830px;
+}
+
+.wp-block-table {
+  margin: 0;
 }
 
 table {
   font-family: var(--font-family-open-sans);
   font-size: 16px;
-  margin: 40px auto;
+  margin: 20px auto;
   text-align: center;
 }
 
@@ -629,6 +651,7 @@ td {
     padding: 0 1em;
     margin: 0 auto;
     width: auto;
+    width: 80vw;
   }
 
   .post {
@@ -686,9 +709,12 @@ td {
     margin-top: 115px;
   }
 
-  .blog-list,
-  .page-container {
+  .blog-list {
     padding: 25px 0 0 0;
+  }
+
+  .page-container {
+    padding: 3em 0 0 0;
   }
 
   .post {
@@ -704,8 +730,12 @@ td {
     margin-bottom: 10px;
   }
 
+  .wp-block-table {
+    margin-bottom: 2em;
+  }
+
   table {
-    padding: 0 2em;
+    margin-bottom: 0;
   }
 }
 
