@@ -74,4 +74,11 @@ add_action('widgets_init', 'wpbinge_widget_areas');
 
 ?>
 
-
+<?php
+    // Limit excerpt word count
+    
+    function wpbinge_excerpt_length( $length ) {
+        return 20;
+    }
+    add_filter( 'excerpt_length', 'wpbinge_excerpt_length', 999 );
+?>

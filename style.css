@@ -139,6 +139,7 @@ p {
   color: var(--black);
   font-family: var(--font-family-open-sans-bold);
   font-size: var(--font-size-body-desktop);
+  margin-top: 20px;
 }
 
 .read-more-link:hover {
@@ -220,7 +221,6 @@ nav a {
   display: flex;
   height: fit-content;
   flex-direction: column;
-  /* margin-bottom: 2em; */
   width: 830px;
 }
 
@@ -263,11 +263,14 @@ span.page-numbers.current {
   color: var(--black);
 }
 
+.blog-post-title {
+  margin: 15px 0;
+}
+
 .blog-post-title a {
   color: var(--black);
   font-family: var(--font-family-domaine-bold);
   line-height: 1.25;
-  margin-top: 15px;
   margin-bottom: 7px;
 }
 
@@ -277,6 +280,8 @@ span.page-numbers.current {
   font-size: var(--font-size-body-desktop);
   margin-right: 10px;
 }
+
+/* TAGS */
 
 .tag {
   border-radius: 5px;
