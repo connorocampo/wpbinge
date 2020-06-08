@@ -24,14 +24,14 @@
     </section>
     <!-- /blog list -->
 
+    
     <section class="sidebar">
-        <h2 class="sidebar-header">Search The Blog</h2>
+        <h2 class="search-header"><label class="screen-reader-text sidebar-header search-header" for="s">Search The Blog</label></h2>
         <form role="search" method="get" id="searchform" class="searchform" action="http://localhost:8888/">
           <div>
             <div class="search-box">
-              <label class="screen-reader-text" for="s">
+              
                 <input type="text" name="s" id="s" role="searchbox" arial-label="search">
-              </label>
             </div>
             <button type="submit" class="search-button" aria-label="search the blog button">
               <i class="fas fa-search"></i>
@@ -70,6 +70,7 @@
           ></a>
       </section>
       <!-- /sidebar -->
+
   </div>
   <!-- /main content -->
   

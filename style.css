@@ -369,6 +369,14 @@ input#s {
   width: 100%;
 }
 
+.sidebar .search-header {
+  margin-top: 0;
+}
+
+#error-search-box .screen-reader-text {
+  display: none;
+}
+
 .search-box {
   display: inline-block;
   height: 40px;
@@ -714,8 +722,13 @@ td {
   }
 
   /* SIDEBAR */
+
   .sidebar-header {
     margin-top: 115px;
+  }
+
+  .sidebar .search-header {
+    margin-top: 1em;
   }
 
   /* FOOTER */
