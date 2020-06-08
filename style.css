@@ -464,6 +464,7 @@ footer {
 
 .widget a {
   color: var(--grey);
+  display: inline-block;
   font-family: var(--font-family-open-sans-bold);
   font-size: 18px;
   margin-bottom: 10px;
