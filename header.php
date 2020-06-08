@@ -24,7 +24,7 @@
             $logo = wp_get_attachment_image_src($custom_logo_id);
           }
           ?>
-        <a href="/"><img src="<?php echo $logo[0] ?>" /></a>
+        <a href="/"><img src="<?php echo $logo[0] ?>" alt="" /></a>
 
         <?php
             wp_nav_menu(
@@ -37,7 +37,7 @@
             );
         ?>
 
-        <button class="nav-btn">
+        <button class="nav-btn" aria-label="mobile menu button">
           <i class="fas fa-ellipsis-v toggle-btn" onclick="toggleNav()"></i>
         </button>
       </nav>

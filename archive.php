@@ -28,7 +28,7 @@
             <div class="search-box">
               <input type="text" value="" name="s" id="s">
             </div>
-            <button type="submit" class="search-button">
+            <button type="submit" class="search-button" aria-label="search the blog button">
               <i class="fas fa-search"></i>
             </button>
           </div>
@@ -43,13 +43,13 @@
             <i class="fas fa-tag"></i> SEO</a>
           <a href="http://localhost:8888/tag/wordpress-development/" class="tag">
             <i class="fas fa-tag"></i> WordPress Development</a>
-          <a href="http://localhost:8888/tag/reviews/" class="tag tag-yellow">
+          <a href="http://localhost:8888/tag/reviews/" class="tag">
             <i class="fas fa-tag"></i> Reviews</a>
-          <a href="http://localhost:8888/tag/plugins/" class="tag tag-hotpink">
+          <a href="http://localhost:8888/tag/plugins/" class="tag">
             <i class="fas fa-tag"></i> Plugins</a>
-          <a href="http://localhost:8888/tag/opinion/" class="tag tag-blue-primary">
+          <a href="http://localhost:8888/tag/opinion/" class="tag">
             <i class="fas fa-tag"></i> Opinion</a>
-          <a href="http://localhost:8888/tag/recommended-tools/" class="tag tag-blue-tertiary">
+          <a href="http://localhost:8888/tag/recommended-tools/" class="tag">
             <i class="fas fa-tag"></i> Recommended Tools</a>
         
 

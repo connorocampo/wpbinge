@@ -133,6 +133,7 @@ h3 {
   font-size: 24px;
 }
 
+ul,
 ol,
 p {
   font-family: var(--font-family-open-sans);

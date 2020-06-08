@@ -38,7 +38,7 @@
             <div class="search-box">
               <input type="text" value="" name="s" id="s">
             </div>
-            <button type="submit" class="search-button">
+            <button type="submit" class="search-button" aria-label="search the blog button">
               <i class="fas fa-search"></i>
             </button>
           </div>
