@@ -152,6 +152,11 @@ p {
   margin-top: 20px;
 }
 
+.blog-list .post p a {
+  color: var(--black);
+  text-decoration: underline;
+}
+
 .read-more-link:hover {
   border-bottom: 3px solid #ffc046;
 }
@@ -537,7 +542,7 @@ footer {
 
 .page a {
   color: var(--black);
-  border-bottom: 2px solid #ffc046;
+  text-decoration: underline;
 }
 
 .page-container {
@@ -701,10 +706,6 @@ td {
     width: 80vw;
   }
 
-  .screen-reader-text {
-    display: none;
-  }
-
   .pagination {
     margin: 0;
     top: 90px;
@@ -759,6 +760,10 @@ td {
 
   .pagination {
     top: 140px;
+  }
+
+  .pagination .screen-reader-text {
+    display: none;
   }
 
   .page-container {
