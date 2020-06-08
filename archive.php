@@ -3,22 +3,22 @@
 ?>
     
 	<div class="main-content">
-    <section class="blog-list">
+        <section class="blog-list">
 
-        <!-- gets post or page content -->
-		    <?php
-            if (have_posts()) {
-                while (have_posts()) {
-                    the_post();
+            <!-- gets post or page content -->
+                <?php
+                if (have_posts()) {
+                    while (have_posts()) {
+                        the_post();
 
-                    // gets template part from template-parts.php folder
-                    get_template_part('template-parts/content', 'archive');
+                        // gets template part from template-parts.php folder
+                        get_template_part('template-parts/content', 'archive');
+                    }
                 }
-            }
-        ?>
-        
-    </section>
-    <!-- /blog list -->
+            ?>
+            
+        </section>
+        <!-- /blog list -->
     </div>
 	<!-- /main content -->
     

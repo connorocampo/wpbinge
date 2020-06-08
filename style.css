@@ -174,6 +174,11 @@ nav {
   width: var(--breakpoint-xl);
 }
 
+nav img {
+  height: 50px;
+  margin-top: 5px;
+}
+
 nav a {
   color: var(--grey);
   display: block;
@@ -188,7 +193,7 @@ nav a {
 .nav-links {
   display: flex;
   float: right;
-  margin-top: 10px;
+  margin-top: 15px;
   text-transform: uppercase;
 }
 
@@ -586,6 +591,10 @@ td {
     float: none;
   } */
 
+  .nav-links {
+    margin: 0;
+  }
+
   .nav-links .selectedLink {
     display: none;
   }
@@ -605,6 +614,7 @@ td {
   .fa-ellipsis-v {
     font-size: 22px;
     padding: 1.195em;
+    padding: 1.7em;
   }
 
   .responsive {
@@ -725,10 +735,11 @@ td {
 @media (max-width: 1000px) {
   .main-content {
     margin-top: 115px;
+    margin-top: 130px;
   }
 
   .blog-list {
-    padding: 25px 0 0 0;
+    padding: 3em 0 0 0;
   }
 
   .page-container {
@@ -736,7 +747,10 @@ td {
   }
 
   .post {
+    padding: 0 1em;
     margin: 0 auto;
+    width: auto;
+    width: 80vw;
   }
 
   hr {
