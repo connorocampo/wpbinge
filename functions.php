@@ -58,10 +58,10 @@ function wpbinge_widget_areas()
 
     register_sidebar(
         array(
-            'before_title' => '',
-            'after_title' => '',
-            'before_widget' => '',
-            'after_widget' => '',
+            'before_title' => '<h2>',
+            'after_title' => '</h2>',
+            'before_widget' => '<div class="widget">',
+            'after_widget' => '</div>',
             'name' => 'Footer Area',
             'id' => 'footer-1',
             'description' => 'Footer Widget Area'

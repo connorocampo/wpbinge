@@ -117,6 +117,7 @@ h4,
 h5,
 h6 {
   font-family: var(--font-family-domine);
+  line-height: 1.5;
 }
 
 h1 {
@@ -431,7 +432,7 @@ footer {
 
 .footer-content {
   color: var(--grey);
-  padding: 0 1em;
+  padding: 0 1.25em;
   margin: 0 auto;
   width: var(--breakpoint-xl);
 }
@@ -444,10 +445,21 @@ footer {
 .widget {
   display: flex;
   flex-direction: column;
+  /* font-family: var(--font-family-domine-bold);
+  font-size: 28px; */
 }
 
 .widget h2 {
   margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.widget ul {
+  margin-left: -40px;
+}
+
+.widget ul li {
+  list-style: none;
 }
 
 .widget a {
@@ -461,7 +473,8 @@ footer {
   color: var(--yellow);
 }
 
-.widget-text {
+.widget-text,
+.textwidget {
   margin: 0;
   width: 290px;
 }
@@ -469,7 +482,6 @@ footer {
 .footer-credit p {
   color: var(--grey);
   margin: 100px auto 0 auto;
-  padding: 0 1em;
   width: var(--breakpoint-xl);
 }
 
@@ -685,6 +697,10 @@ td {
 
   .widget h2 {
     margin-top: 30px;
+  }
+
+  .widget img {
+    margin-top: 60px;
   }
 
   .footer-display-ad {
