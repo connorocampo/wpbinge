@@ -262,6 +262,7 @@ hr {
   margin: 40px auto 0 0;
   /* width: 830px; */
   width: 800px;
+  width: 100%;
 }
 
 hr:last-child {
