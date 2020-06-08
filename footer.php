@@ -17,7 +17,7 @@
       | Made with
       <i class="fas fa-heart"></i> by Connor Ocampo | View code in
       <a
-        href="https://github.com/connorocampo/wp-theme-template"
+        href="https://github.com/connorocampo/wpbinge"
         class="footer-credit-link"
         target="_blank"
         rel="noopener noreferrer"

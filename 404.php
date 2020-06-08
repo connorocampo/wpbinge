@@ -2,15 +2,25 @@
     get_header();
 ?>
     
-	<article class="content px-3 py-5 p-md-5">
+	<div class="main-content">
+        <section class="page-container">
+            <div class="page">
 		
-        <h1>Page Not Found</h1>
+                <h1>404 Error: Page Not Found</h1>
+                <p>The page you are looking for has been moved or no longer exists. Try searching for the topic below instead.</p>
 
-        <?php
-            get_search_form();
-        ?>
-
-	</article>
+                <span id="error-search-box">
+                    <?php
+                        get_search_form();
+                    ?>
+                </span>
+            
+            </div>
+            <!-- /page -->
+        </section>
+        <!-- /page-container -->
+    </div>
+	<!-- /main content -->
 	   
     
 <?php

@@ -24,7 +24,7 @@
             $logo = wp_get_attachment_image_src($custom_logo_id);
           }
           ?>
-        <a href="/"><img src="<?php echo $logo[0] ?>" alt="" /></a>
+        <a href="/"><img src="<?php echo $logo[0] ?>" alt="WP Binge Logo" /></a>
 
         <?php
             wp_nav_menu(

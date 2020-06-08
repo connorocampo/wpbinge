@@ -20,9 +20,10 @@
         <h2 class="sidebar-header">Search The Blog</h2>
         <form role="search" method="get" id="searchform" class="searchform" action="http://localhost:8888/">
           <div>
-            <label class="screen-reader-text" for="s">Search for:</label>
             <div class="search-box">
-              <input type="text" value="" name="s" id="s">
+              <label class="screen-reader-text" for="s">
+                <input type="text" name="s" id="s" role="searchbox" arial-label="search">
+              </label>
             </div>
             <button type="submit" class="search-button" aria-label="search the blog button">
               <i class="fas fa-search"></i>
@@ -39,30 +40,26 @@
             <i class="fas fa-tag"></i> SEO</a>
           <a href="http://localhost:8888/tag/wordpress-development/" class="tag">
             <i class="fas fa-tag"></i> WordPress Development</a>
-          <a href="http://localhost:8888/tag/reviews/" class="tag tag-yellow">
+          <a href="http://localhost:8888/tag/reviews/" class="tag">
             <i class="fas fa-tag"></i> Reviews</a>
-          <a href="http://localhost:8888/tag/plugins/" class="tag tag-hotpink">
+          <a href="http://localhost:8888/tag/plugins/" class="tag">
             <i class="fas fa-tag"></i> Plugins</a>
-          <a href="http://localhost:8888/tag/opinion/" class="tag tag-blue-primary">
+          <a href="http://localhost:8888/tag/opinion/" class="tag">
             <i class="fas fa-tag"></i> Opinion</a>
-          <a href="http://localhost:8888/tag/recommended-tools/" class="tag tag-blue-tertiary">
+          <a href="http://localhost:8888/tag/recommended-tools/" class="tag">
             <i class="fas fa-tag"></i> Recommended Tools</a>
         
 
         <h2 class="sidebar-header">Social Media</h2>
-          <a href="https://github.com/connorocampo" class="social-media-link"
+          <a href="https://github.com/connorocampo" class="social-media-link" aria-label="github profile"
             target="_blank" rel="noopener noreferrer">
             <i class="fab fa-github social-media-icon"></i></a>
-          <a href="https://codepen.io/connorocampo" class="social-media-link" target="_blank" rel="noopener noreferrer"
-            ><i class="fab fa-codepen social-media-icon"></i
-          ></a>
-          <a href="https://www.linkedin.com/in/connorocampo/" class="social-media-link" target="_blank" rel="noopener noreferrer"
+          <a href="https://www.linkedin.com/in/connorocampo/" class="social-media-link" target="_blank" rel="noopener noreferrer" aria-label="github profile"
             ><i class="fab fa-linkedin-in social-media-icon"></i
           ></a>
-          <a href="https://twitter.com/ConnorOcampo" class="social-media-link" target="_blank" rel="noopener noreferrer"
+          <a href="https://twitter.com/ConnorOcampo" class="social-media-link" target="_blank" rel="noopener noreferrer" aria-label="github profile"
             ><i class="fab fa-twitter social-media-icon"></i
           ></a>
-
       </section>
       <!-- /sidebar -->
     </div>
