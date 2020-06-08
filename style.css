@@ -18,6 +18,7 @@ Author URI: https://connorocampo.dev
   --yellow: #ffc046;
   --hotpink: #ff4250;
   --red: #d95252;
+  --purple: #c73967;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -267,7 +268,7 @@ hr:last-child {
   justify-content: space-between;
   margin: 0px auto;
   position: relative;
-  top: 80px;
+  top: 85px;
   width: var(--width-blog-content);
 }
 
@@ -347,6 +348,19 @@ span.page-numbers.current {
   color: var(--black);
 }
 
+form .screen-reader-text {
+  display: none;
+}
+
+input#s {
+  border: 1px solid #eee;
+  border-radius: 5px;
+  font-size: var(--font-size-body-desktop);
+  height: 40px;
+  padding: 0 0.5em;
+  width: 100%;
+}
+
 .search-box {
   display: inline-block;
   height: 40px;
@@ -364,24 +378,17 @@ span.page-numbers.current {
   cursor: pointer;
 }
 
-.search-input {
-  border: 1px solid #eee;
-  border-radius: 5px;
-  font-size: var(--font-size-body-desktop);
-  height: 40px;
-  width: 100%;
-}
-
-.search-input[type="text"] {
-  padding: 0 0.5em;
-}
-
 .fa-search {
   color: var(--black);
   font-size: 16px;
 }
 
 .sidebar-recent-post {
+  color: var(--black);
+  line-height: 1.75;
+}
+
+.sidebar ul li a {
   color: var(--black);
   line-height: 1.75;
 }
@@ -725,7 +732,7 @@ td {
   }
 
   .page-container {
-    padding: 3em 0 0 0;
+    padding: 3em 0;
   }
 
   .post {

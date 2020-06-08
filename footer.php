@@ -13,13 +13,14 @@
   <div class="footer-credit">
     <p>
       Copyright © 2020 |
-      <a class="footer-credit-link" href="/"><?php echo get_bloginfo('name'); ?></a>
+      <a class="footer-credit-link" href="/" rel="noopener noreferrer"><?php echo get_bloginfo('name'); ?></a>
       | Made with
       <i class="fas fa-heart"></i> by Connor Ocampo | View code in
       <a
         href="https://github.com/connorocampo/wp-theme-template"
         class="footer-credit-link"
         target="_blank"
+        rel="noopener noreferrer"
         >GitHub</a
       >
     </p>

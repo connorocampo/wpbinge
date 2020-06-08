@@ -46,13 +46,13 @@ function wpbinge_widget_areas()
 {
     register_sidebar(
         array(
-            'before_title' => '',
-            'after_title' => '',
+            'before_title' => '<h2 class="sidebar-header">',
+            'after_title' => '</h2>',
             'before_widget' => '',
             'after_widget' => '',
-            'name' => 'Sidebar Area',
+            'name' => 'Right Sidebar Area',
             'id' => 'sidebar-1',
-            'description' => 'Sidebar Widget Area'
+            'description' => 'Right Sidebar Widget Area'
         )
     );
 
@@ -65,7 +65,6 @@ function wpbinge_widget_areas()
             'name' => 'Footer Area',
             'id' => 'footer-1',
             'description' => 'Footer Widget Area'
-
         )
     );
 }
