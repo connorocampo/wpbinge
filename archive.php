@@ -20,7 +20,7 @@
         </section>
         <!-- /blog list -->
 
-        <<section class="sidebar">
+        <section class="sidebar">
         <h2 class="search-header"><label class="screen-reader-text sidebar-header search-header" for="s">Search The Blog</label></h2>
         <form role="search" method="get" id="searchform" class="searchform" action="http://localhost:8888/">
           <div>

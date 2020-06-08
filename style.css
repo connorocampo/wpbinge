@@ -1,7 +1,7 @@
 /*
 Theme Name: WP Binge
 Text Domain: wpbinge.com
-Version: 1.0
+Version: 1.0.1
 Description: Responsive, right sidebar theme, blog
 Tags: responsive, minimalist
 Author: Connor Ocampo
@@ -192,6 +192,7 @@ nav a {
   font-family: var(--font-family-open-sans-bold);
   font-size: 18px;
   padding: 20px 1em;
+  padding: 0.5em 1em;
   margin: 0 1px;
   text-decoration: none;
 }
@@ -289,6 +290,16 @@ span.page-numbers.current {
   font-family: var(--font-family-open-sans-bold);
   font-size: 18px;
   padding: 20px 1em;
+}
+
+.page-numbers {
+  display: block;
+  float: left;
+  font-family: var(--font-family-open-sans-bold);
+  font-size: 18px;
+  padding: 20px 1em;
+  margin: 0 1px;
+  text-decoration: none;
 }
 
 .pagination a {
@@ -636,8 +647,8 @@ td {
 
   .fa-ellipsis-v {
     font-size: 22px;
-    padding: 1.195em;
     padding: 1.7em;
+    padding: 1.2em;
   }
 
   .responsive {
@@ -716,19 +727,19 @@ td {
   }
 
   .pagination {
-    margin: 0;
+    margin: 0 auto;
     top: 90px;
     width: 80vw;
   }
 
   /* SIDEBAR */
 
-  .sidebar-header {
+  .sidebar .search-header {
     margin-top: 115px;
   }
 
-  .sidebar .search-header {
-    margin-top: 1em;
+  .sidebar-header {
+    margin-top: 115px;
   }
 
   /* FOOTER */
