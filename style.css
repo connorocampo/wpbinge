@@ -395,6 +395,7 @@ input#s {
 
 .sidebar ul li a {
   color: var(--black);
+  font-size: var(--font-size-body-desktop);
   line-height: 1.75;
 }
 
@@ -661,6 +662,7 @@ td {
 
   .featured-image {
     width: 75vw;
+    width: 100%;
   }
 
   .blog-post-title,
@@ -672,7 +674,7 @@ td {
   }
 
   .page {
-    padding: 0 1em;
+    /* padding: 0 1em; */
     margin: 0 auto;
     width: auto;
     width: 80vw;
@@ -681,6 +683,10 @@ td {
   .post {
     padding: 0;
     width: 80vw;
+  }
+
+  .post p {
+    width: 75vw;
   }
 
   table {
@@ -740,17 +746,29 @@ td {
 
   .blog-list {
     padding: 3em 0 0 0;
+    padding: 3em 0;
+  }
+
+  .pagination {
+    top: 140px;
   }
 
   .page-container {
     padding: 3em 0;
   }
 
+  .page {
+    padding: 0;
+  }
+
   .post {
-    padding: 0 1em;
     margin: 0 auto;
     width: auto;
     width: 80vw;
+  }
+
+  .featured-image {
+    width: 100%;
   }
 
   hr {
