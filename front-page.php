@@ -1,54 +1,56 @@
 <?php
-    get_header();
+  get_header();
 ?>
 <!-- /header -->
 
-    <div class="main-content">
-        <section class="page-container">
-            <div class="page">
-              
-            <img
-                src="<?php the_post_thumbnail_url('thumbnail'); ?>"
-                alt=""
-                class="featured-image"
-            />
+  <div class="main-content">
+    <section class="page-container">
+      <div class="page">
+        
+        <img
+            src="<?php the_post_thumbnail_url('thumbnail'); ?>"
+            alt=""
+            class="featured-image"
+        />
 
-            <h1>
-              <?php the_title(); ?>
-            </h1>
+        <h1>
+          <?php the_title(); ?>
+        </h1>
 
-                <!-- gets post or page content -->
-                <?php
-                    if (have_posts()) {
-                        while (have_posts()) {
-                            the_post();
-                            the_content();
-                        }
-                    }
-                ?>
-            </div>
-        </section>
-        <!-- /page-container -->
+        <!-- gets post or page content -->
+        <?php
+          if (have_posts()) {
+            while (have_posts()) {
+                the_post();
+                the_content();
+            }
+          }
+        ?>
+      </div>
+    </section>
+    <!-- /page-container -->
 
-      <section class="sidebar">
-        <h2 class="search-header"><label class="screen-reader-text sidebar-header search-header" for="s">Search The Blog</label></h2>
+    <section class="sidebar">
+
+    <!-- <h2 class="sidebar-header">Search The Blog</h2>
         <form role="search" method="get" id="searchform" class="searchform" action="http://localhost:8888/">
           <div>
             <div class="search-box">
-              
+              <label class="screen-reader-text" for="s">
                 <input type="text" name="s" id="s" role="searchbox" arial-label="search">
+              </label>
             </div>
             <button type="submit" class="search-button" aria-label="search the blog button">
               <i class="fas fa-search"></i>
             </button>
           </div>
-        </form>
+        </form> -->
 
-        <?php
-          dynamic_sidebar('sidebar-1');
-        ?>
+      <?php
+        dynamic_sidebar('sidebar-1');
+      ?>
 
-        <h2 class="sidebar-header">Tags</h2>
+      <!-- <h2 class="sidebar-header">Tags</h2>
           <a href="http://localhost:8888/tag/seo/" class="tag">
             <i class="fas fa-tag"></i> SEO</a>
           <a href="http://localhost:8888/tag/wordpress-development/" class="tag">
@@ -64,21 +66,19 @@
         
 
         <h2 class="sidebar-header">Social Media</h2>
-          <a href="https://github.com/connorocampo" class="social-media-link" aria-label="github profile"
-            target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-github social-media-icon"></i></a>
           <a href="https://www.linkedin.com/in/connorocampo/" class="social-media-link" target="_blank" rel="noopener noreferrer" aria-label="github profile"
             ><i class="fab fa-linkedin-in social-media-icon"></i
           ></a>
           <a href="https://twitter.com/ConnorOcampo" class="social-media-link" target="_blank" rel="noopener noreferrer" aria-label="github profile"
             ><i class="fab fa-twitter social-media-icon"></i
-          ></a>
-      </section>
-      <!-- /sidebar -->
+          ></a> -->
 
-    </div>
-    <!-- /main content -->
+    </section>
+    <!-- /sidebar -->
+
+  </div>
+  <!-- /main content -->
 
 <?php
-    get_footer();
+  get_footer();
 ?>
