@@ -38,7 +38,6 @@
             <div class="search-box">
               <label class="screen-reader-text" for="s">
                 <input type="text" name="s" id="s" role="searchbox" arial-label="search">
-              </label>
             </div>
             <button type="submit" class="search-button" aria-label="search the blog button">
               <i class="fas fa-search"></i>
@@ -82,3 +81,4 @@
 <?php
   get_footer();
 ?>
+        

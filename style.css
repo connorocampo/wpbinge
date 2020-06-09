@@ -1,9 +1,9 @@
 /*
 Theme Name: WP Binge
 Text Domain: wpbinge.com
-Version: 1.0.2
+Version: 1.0.3
 Description: Responsive, right sidebar theme, blog
-Tags: responsive, minimalist
+Tags: responsive, minimalist, font awesome
 Author: Connor Ocampo
 Author URI: https://connorocampo.dev
 */
@@ -232,12 +232,15 @@ hr:last-child {
   margin: 0px auto;
   position: relative;
   top: 85px;
+  margin: -30px auto;
+  top: 60px;
   width: var(--width-blog-content);
 }
 
 span.page-numbers.current {
   color: var(--yellow);
   font-size: 18px;
+  font-weight: bold;
   padding: 20px 1em;
 }
 
@@ -575,6 +578,10 @@ td {
     float: none;
   } */
 
+  .main-content {
+    margin-top: 100px;
+  }
+
   .nav-links {
     margin: 0;
   }
@@ -657,7 +664,6 @@ td {
   }
 
   .page {
-    /* padding: 0 1em; */
     margin: 0 auto;
     width: auto;
     width: 80vw;
@@ -678,7 +684,9 @@ td {
 
   .pagination {
     margin: 0 auto;
+    /* margin: -30px auto; */
     top: 90px;
+    /* top: 60px; */
     width: 80vw;
   }
 
@@ -723,13 +731,7 @@ td {
 }
 
 @media (max-width: 1000px) {
-  .main-content {
-    margin-top: 115px;
-    margin-top: 130px;
-  }
-
   .blog-list {
-    padding: 3em 0 0 0;
     padding: 3em 0;
   }
 
@@ -760,7 +762,7 @@ td {
   }
 
   hr {
-    margin: 80px auto 80px 0;
+    margin: 60px auto 60px auto;
   }
 
   .date {
