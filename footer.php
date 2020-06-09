@@ -3,9 +3,9 @@
 
   <div class="widgets">
 
-      <?php
-        dynamic_sidebar('footer-1');
-      ?>
+    <?php
+      dynamic_sidebar('footer-1');
+    ?>
 
   </div>
  
@@ -28,7 +28,7 @@
 </footer>
 
   <?php
-      wp_footer();
+    wp_footer();
   ?>
 
 </body>
