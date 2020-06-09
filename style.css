@@ -364,7 +364,16 @@ input#s {
 .sidebar ul li a {
   color: var(--black);
   font-size: var(--font-size-body-desktop);
+  font-style: italic;
   line-height: 1.75;
+}
+
+.sidebar ul li a:hover {
+  background-color: var(--yellow);
+  background: linear-gradient(#ffc046, #ffc046) no-repeat;
+  background-position: bottom;
+  /* 	Change the second value */
+  background-size: 100% 50%;
 }
 
 .sidebar ul {
