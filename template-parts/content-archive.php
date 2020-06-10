@@ -1,11 +1,19 @@
         <hr />
         
         <div class="post">
+
             <a href="<?php the_permalink(); ?>">
-            <img
+                <?php
+                    if ( has_post_thumbnail() ) {
+                        the_post_thumbnail();
+                    } 
+                ?>
+
+            <!-- <img
                 src="<?php the_post_thumbnail_url('thumbnail'); ?>"
                 class="featured-image"
-            />
+            /> -->
+
             <h2 class="blog-post-title">
                 <?php the_title(); ?></a>
             </h2>
