@@ -1,10 +1,9 @@
         <hr />
         
         <div class="post">
-            <a href="<?php the_permalink(); ?>" target="_blank">
+            <a href="<?php the_permalink(); ?>" target="_blank" rel="noopener noreferrer">
             <img
                 src="<?php the_post_thumbnail_url('thumbnail'); ?>"
-                alt=""
                 class="featured-image"
             />
             <h2 class="blog-post-title">
@@ -17,7 +16,7 @@
             <?php
                 the_excerpt();
             ?>
-            <a href="<?php the_permalink(); ?>" class="read-more-link" target="_blank">Read More</a>
+            <a href="<?php the_permalink(); ?>" class="read-more-link" target="_blank" rel="noopener noreferrer">Read More</a>
         </div>
         <!-- /post -->
         
