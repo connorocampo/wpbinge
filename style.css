@@ -1,7 +1,7 @@
 /*
 Theme Name: WP Binge
 Text Domain: wpbinge.com
-Version: 1.0.5
+Version: 1.0.6
 Description: Responsive, right sidebar theme, blog
 Tags: responsive, minimalist, font awesome
 Author: Connor Ocampo
@@ -657,6 +657,11 @@ td {
 
   .featured-image {
     width: 75vw;
+    width: 100%;
+  }
+
+  .wp-post-image {
+    height: 100%;
     width: 100%;
   }
 
