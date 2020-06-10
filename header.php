@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="WP Binge | Nuild. Grow. Optimize. | Learn WordPress" />
+    <meta name="description" content="WP Binge | Learn WordPress" />
     <meta name="author" content="https://www.connorocampo.dev" />
     <link rel="shortcut icon" href="/wp-content/themes/wpbinge/assets/images/favicon.png" />
 
