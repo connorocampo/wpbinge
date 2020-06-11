@@ -10,6 +10,16 @@
     <meta name="author" content="https://www.connorocampo.dev" />
     <link rel="shortcut icon" href="/wp-content/themes/wpbinge/assets/images/favicon.png" />
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159291549-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-159291549-1');
+  </script>
+
     <?php
       wp_head();
     ?>
